@@ -1,9 +1,10 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/my-app.html",
+  "shell": "src/sottd-app.html",
   "fragments": [
-    "src/my-view1.html",
-    "src/my-view2.html",
-    "src/my-view3.html"
+    "src/sottd-view1.html",
+    "src/sottd-view2.html",
+    "src/sottd-view3.html",
+    "src/sottd-wiki-view.html"
   ]
 }
