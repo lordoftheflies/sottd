@@ -27,12 +27,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 <link rel="import" href="../bower_components/iron-icons/editor-icons.html">
 <link rel="import" href="../bower_components/iron-icons/hardware-icons.html">
 <link rel="import" href="my-icons.html">
+<link rel="import" href="my-shared-styles.html">
 
 <dom-module id="my-app">
 
     <template>
 
-        <style>
+        <style include="my-shared-styles">
 
             :host {
                 display: block;
@@ -124,6 +125,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                 <app-header condenses reveals effects="waterfall">
                     <app-toolbar>
+                        <div class="circle">3</div>
                         <div title>My App</div>
                         <!--<paper-icon-button icon="menu" on-tap="_onOpenIngameMenuDrawer" ></paper-icon-button>-->
                         <paper-icon-button icon="menu" drawer-toggle></paper-icon-button>
