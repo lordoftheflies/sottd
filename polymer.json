@@ -1,10 +1,12 @@
 {
   "entrypoint": "index.html",
-  "shell": "src/sottd-app.html",
+  "shell": "src/my-app.html",
   "fragments": [
-    "src/sottd-view1.html",
-    "src/sottd-view2.html",
-    "src/sottd-view3.html",
-    "src/sottd-wiki-view.html"
+    "src/my-character-sheet-view.html",
+    "src/my-ingame-view.html",
+    "src/my-inventory-view.html",
+    "src/my-journal-view.html",
+    "src/my-map-view.html",
+    "src/my-wikipedia-view.html"
   ]
 }
