@@ -68,7 +68,9 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                 padding-left: 32px;
             }
 
-
+            iron-pages.main {
+                @apply(--layout-self-stretch);
+            }
         </style>
 
         <app-location route="{{route}}"></app-location>
@@ -122,7 +124,7 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
             </app-drawer>
 
             <!-- Main content -->
-            <app-header-layout has-scrolling-region class="layout vertical">
+            <app-header-layout has-scrolling-region>
 
                 <app-header condenses reveals effects="waterfall">
                     <app-toolbar>
@@ -134,18 +136,10 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
                         
                     </app-toolbar>
                 </app-header>
-
-                <iron-pages role="main" selected="[[page]]" attr-for-selected="name" class="flex">
-                    <my-character-sheet-view name="character-sheet-view"></my-character-sheet-view>
-                    <my-ingame-view name="ingame-view"
-                                    play-canvas-url="http://playcanv.as/p/upfMcT8i"
-                                    ></my-ingame-view>
-                    <my-inventory-view name="inventory-view"></my-inventory-view>
-                    <my-journal-view name="journal-view"></my-journal-view>
-                    <my-map-view name="map-view"></my-map-view>
-                    <my-wikipedia-view name="wikipedia-view"></my-wikipedia-view>
-                </iron-pages>
-
+                <my-ingame-view name="ingame-view"
+                                play-canvas-url="http://playcanv.as/p/upfMcT8i"
+                                ></my-ingame-view>
+                
             </app-header-layout>
 
         </app-drawer-layout>
